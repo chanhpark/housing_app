@@ -5,7 +5,7 @@ require 'csv'
 require 'pry'
 
 
-  zipcodes = []
+zipcodes = []
 
 CSV.foreach("zipcode.csv", headers: true) do |row|{ zipcode: row['zipcode'] }
   row.each { |key,value| zipcodes << value }
